@@ -1,5 +1,6 @@
 import {
   addProduct,
+  findProduct,
   products,
   updateProduct,
 } from './products/product.service';
@@ -25,4 +26,9 @@ const product1 = products[0];
 
 updateProduct(product1.id, {
   title: 'new title',
+});
+
+findProduct({
+  stock: 10,
+  color: 'red',
 });
